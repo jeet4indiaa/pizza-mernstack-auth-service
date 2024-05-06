@@ -10,19 +10,19 @@ export default checkSchema({
             errorMessage: "Email should be a valid email",
         },
     },
-    // firstName: {
-    //     errorMessage: "First name is required!",
-    //     notEmpty: true,
-    //     trim: true,
-    // },
-    // lastName: {
-    //     errorMessage: "Last name is required!",
-    //     notEmpty: true,
-    //     trim: true,
-    // },
+    firstName: {
+        errorMessage: "First name is required!",
+        notEmpty: true,
+        trim: true,
+    },
+    lastName: {
+        errorMessage: "Last name is required!",
+        notEmpty: true,
+        trim: true,
+    },
     // password: {
     //     trim: true,
-    //     errorMessage: "Last name is required!",
+    //     errorMessage: "Password is required!",
     //     notEmpty: true,
     //     isLength: {
     //         options: {
