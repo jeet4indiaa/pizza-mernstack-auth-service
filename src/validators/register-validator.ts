@@ -20,17 +20,17 @@ export default checkSchema({
         notEmpty: true,
         trim: true,
     },
-    // password: {
-    //     trim: true,
-    //     errorMessage: "Password is required!",
-    //     notEmpty: true,
-    //     isLength: {
-    //         options: {
-    //             min: 8,
-    //         },
-    //         errorMessage: "Password length should be at least 8 chars!",
-    //     },
-    // },
+    password: {
+        trim: true,
+        errorMessage: "Password is required!",
+        notEmpty: true,
+        isLength: {
+            options: {
+                min: 8,
+            },
+            errorMessage: "Password length should be at least 8 chars!",
+        },
+    },
 });
 
 //export default [body("email").notEmpty().withMessage("Email is required!")];
