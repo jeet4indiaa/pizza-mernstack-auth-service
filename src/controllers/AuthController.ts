@@ -1,5 +1,5 @@
 import { Response } from "express";
-import { RegisterUserRequest } from "../types";
+import { AuthRequest, RegisterUserRequest } from "../types";
 import { UserService } from "../services/UserService";
 import { NextFunction } from "express-serve-static-core";
 import { Logger } from "winston";
@@ -164,5 +164,13 @@ export class AuthController {
             next(err);
             return;
         }
+    }
+
+    async self(req: AuthRequest, res: Response) {
+        // token req.auth.id
+        // eslint-disable-next-line no-console
+        console.log("Request Auth: ", req.auth);
+        const user = await this.userService.findById(Number(req.auth.sub));
+        res.json({ ...user, password: undefined });
     }
 }
