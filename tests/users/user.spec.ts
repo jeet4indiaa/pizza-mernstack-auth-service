@@ -96,6 +96,8 @@ describe("GET /auth/self", () => {
                 .set("Cookie", [`accessToken=${accessToken};`])
                 .send();
             // Assert
+            // eslint-disable-next-line no-console
+            console.log(response.body);
             // Check if user id matches with registered user
             expect(response.body as Record<string, string>).not.toHaveProperty(
                 "password",
