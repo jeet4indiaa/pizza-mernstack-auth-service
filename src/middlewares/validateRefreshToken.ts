@@ -15,7 +15,7 @@ export default expressjwt({
     },
     async isRevoked(request: Request, token) {
         // eslint-disable-next-line no-console
-        console.log("Token: ", token);
+        // console.log("Token: ", token);
         try {
             const refreshTokenRepo = AppDataSource.getRepository(RefreshToken);
             const refreshToken = await refreshTokenRepo.findOne({
