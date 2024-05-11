@@ -97,7 +97,7 @@ describe("GET /auth/self", () => {
                 .send();
             // Assert
             // eslint-disable-next-line no-console
-            console.log(response.body);
+            // console.log(response.body);
             // Check if user id matches with registered user
             expect(response.body as Record<string, string>).not.toHaveProperty(
                 "password",
