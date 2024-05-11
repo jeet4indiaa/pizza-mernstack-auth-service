@@ -1,10 +1,10 @@
 {
     "keys": [
         {
-            "kty":"RSA",
-            "use":"sig",
-            "n":"AJNpsYu1M9TnsG8RNyImQ3t7uVMcz_Nw05ncZGIc61V3NKSiCCMy10nUPyRdmH1zvSeHfgkkF-ioynqFf4LHNXkHCdMNQbwXMaUaGCp8waNA7sZRatw0DMvm3izLP68fMP0mfcV3vhhvI3HhiThQaGoKuce67bYfyG_T7ikblp5PTH-qmH3Z1j8mtepf2DwgwzuQ7GW5FI64sJM2IHddpkH3hT9crPOutirmj89sK9RVFkMb7xQru3t7fd7pAF8lAdbt7g6RjCGToEFRZ5m-BTbVksHCgbcCYzpy11ctSYkIsveVYDUoVfZf7wQ_U5gQAfoYTcw8IgiPZYt2M7IloY0",
-            "e":"AQAB"
+            "kty": "RSA",
+            "use": "sig",
+            "n": "AJNpsYu1M9TnsG8RNyImQ3t7uVMcz_Nw05ncZGIc61V3NKSiCCMy10nUPyRdmH1zvSeHfgkkF-ioynqFf4LHNXkHCdMNQbwXMaUaGCp8waNA7sZRatw0DMvm3izLP68fMP0mfcV3vhhvI3HhiThQaGoKuce67bYfyG_T7ikblp5PTH-qmH3Z1j8mtepf2DwgwzuQ7GW5FI64sJM2IHddpkH3hT9crPOutirmj89sK9RVFkMb7xQru3t7fd7pAF8lAdbt7g6RjCGToEFRZ5m-BTbVksHCgbcCYzpy11ctSYkIsveVYDUoVfZf7wQ_U5gQAfoYTcw8IgiPZYt2M7IloY0",
+            "e": "AQAB"
         }
     ]
 }
