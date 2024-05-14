@@ -80,4 +80,8 @@ export class UserService {
             throw error;
         }
     }
+
+    async getAll() {
+        return await this.userRepository.find();
+    }
 }
