@@ -34,17 +34,26 @@ router.patch(
         tenantController.update(req, res, next) as unknown as RequestHandler,
 );
 
-router.get("/", (req, res, next) => tenantController.getAll(req, res, next));
+router.get(
+    "/",
+    (req, res, next) =>
+        tenantController.getAll(req, res, next) as unknown as RequestHandler,
+);
 
-router.get("/:id", authenticate, canAccess([Roles.ADMIN]), (req, res, next) =>
-    tenantController.getOne(req, res, next),
+router.get(
+    "/:id",
+    authenticate as RequestHandler,
+    canAccess([Roles.ADMIN]),
+    (req, res, next) =>
+        tenantController.getOne(req, res, next) as unknown as RequestHandler,
 );
 
 router.delete(
     "/:id",
-    authenticate,
+    authenticate as RequestHandler,
     canAccess([Roles.ADMIN]),
-    (req, res, next) => tenantController.destroy(req, res, next),
+    (req, res, next) =>
+        tenantController.destroy(req, res, next) as unknown as RequestHandler,
 );
 
 export default router;
